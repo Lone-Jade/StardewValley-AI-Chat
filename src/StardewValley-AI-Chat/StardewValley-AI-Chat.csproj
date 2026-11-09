@@ -23,6 +23,8 @@
     <None Update="Data\Dialogues\*.json" CopyToOutputDirectory="PreserveNewest" />
     <None Update="config.example.json" CopyToOutputDirectory="PreserveNewest" />
     <None Update="ConfigTemplates\*.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Update="i18n\*.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Update="assets\*.png" CopyToOutputDirectory="PreserveNewest" />
     <None Include="..\..\README.md" Link="README.md" CopyToOutputDirectory="PreserveNewest" />
     <None Include="..\..\LICENSE" Link="LICENSE" CopyToOutputDirectory="PreserveNewest" />
     <None Include="..\..\docs\*.md" Link="docs\%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />

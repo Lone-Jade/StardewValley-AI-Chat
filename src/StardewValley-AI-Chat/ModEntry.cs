@@ -121,7 +121,7 @@ public sealed class ModEntry : Mod
             .FirstOrDefault();
         if (target is null)
         {
-            Game1.addHUDMessage(new HUDMessage("请靠近并面向一位可对话的角色。"));
+            Game1.addHUDMessage(new HUDMessage(Helper.Translation.Get("hud.approach-npc").ToString()));
             return;
         }
 
@@ -527,7 +527,7 @@ public sealed class ModEntry : Mod
             return;
         BeginDialogue(composerNpc.Name, message, reportUnavailable: true, owner);
         if (!aiQueue.IsBusy && composerMenu == owner)
-            owner.ShowError("暂时无法发起对话，请查看控制台提示后重试。");
+            owner.ShowError(Helper.Translation.Get("hud.request-unavailable").ToString());
     }
 
     private void CloseComposer()
@@ -556,7 +556,7 @@ public sealed class ModEntry : Mod
 
         if (aiQueue.IsBusy)
         {
-            Game1.addHUDMessage(new HUDMessage("正在等待角色回应，请稍候。"));
+            Game1.addHUDMessage(new HUDMessage(Helper.Translation.Get("hud.request-pending").ToString()));
             return;
         }
 
@@ -639,7 +639,7 @@ public sealed class ModEntry : Mod
                     pendingAiNpc = npc;
                     pendingAiPool = pool;
                     pendingAiRequest = request;
-                    Game1.addHUDMessage(new HUDMessage("正在等待角色回应……"));
+                    Game1.addHUDMessage(new HUDMessage(Helper.Translation.Get("hud.waiting-response").ToString()));
                     Monitor.Log($"AI request started for {npc.Name}.", LogLevel.Info);
                 }
                 return;
@@ -678,7 +678,7 @@ public sealed class ModEntry : Mod
         if (result.SkipReason is not null)
         {
             Monitor.Log($"Dialogue skipped: {result.SkipReason}", LogLevel.Info);
-            Game1.addHUDMessage(new HUDMessage("暂时没有可用的新对话。"));
+            Game1.addHUDMessage(new HUDMessage(Helper.Translation.Get("hud.no-dialogue").ToString()));
         }
     }
 
@@ -785,7 +785,7 @@ public sealed class ModEntry : Mod
                         Monitor.Log($"Memory update for {npc.Name}: {notice}.",
                             notice is "favorite_operation_corrected" or "forget_operation_corrected" ? LogLevel.Debug : LogLevel.Warn);
                         if (notice == "capacity_reached")
-                            Game1.addHUDMessage(new HUDMessage("长期记忆容量已满，本轮新增偏好未保存。"));
+                            Game1.addHUDMessage(new HUDMessage(Helper.Translation.Get("hud.memory-full").ToString()));
                     }
                     if (result.MemoryUpdateFailure is not null)
                         Monitor.Log($"Memory update for {npc.Name}: {result.MemoryUpdateFailure}.", LogLevel.Warn);

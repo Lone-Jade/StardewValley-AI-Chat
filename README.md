@@ -31,6 +31,8 @@ PowerShell 脚本优先使用项目内 `.tools/dotnet/dotnet.exe`，也支持 PA
 
 也可以将 `STARDEW_GAME_PATH` 设为自己的游戏目录，再执行上述脚本。开发实例只读取 `artifacts/Mods`，安装包输出在 `src/StardewValley-AI-Chat/bin/Debug/net6.0`。
 
+上传 Nexus Mods 的安装包通过 `./package-nexus.ps1 -GamePath $env:STARDEW_GAME_PATH` 生成，输出到 `artifacts/nexus`。包内含空密钥的 `config.json`、玩家说明、常用提示语言文件及项目图标。
+
 ## AI 配置
 
 当前公测版本为 `0.1.0-beta.1`。将安装包中的完整模组目录放入实际启用的 Mods 目录。

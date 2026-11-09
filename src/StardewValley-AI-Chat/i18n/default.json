@@ -1,0 +1,8 @@
+{
+  "hud.approach-npc": "请靠近并面向一位可对话的角色。",
+  "hud.request-pending": "正在等待角色回应，请稍候。",
+  "hud.waiting-response": "正在等待角色回应……",
+  "hud.request-unavailable": "暂时无法发起对话，请查看控制台提示后重试。",
+  "hud.no-dialogue": "暂时没有可用的新对话。",
+  "hud.memory-full": "长期记忆容量已满，本轮新增偏好未保存。"
+}
