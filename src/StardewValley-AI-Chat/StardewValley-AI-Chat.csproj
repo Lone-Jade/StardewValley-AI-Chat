@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <Version>0.1.0-beta.1</Version>
+    <Deterministic>true</Deterministic>
+    <PublicSourceRootPath>$([System.IO.Path]::GetFullPath('$(MSBuildProjectDirectory)/../..'))</PublicSourceRootPath>
+    <PathMap>$(PublicSourceRootPath)=/_/</PathMap>
+    <IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
+    <EnableSourceControlManagerQueries>false</EnableSourceControlManagerQueries>
+    <AssemblyName>StardewValley-AI-Chat</AssemblyName>
+    <RootNamespace>StardewAI</RootNamespace>
+    <ModFolderName>StardewValley-AI-Chat</ModFolderName>
+    <RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
+    <GameModsPath>$(MSBuildProjectDirectory)\..\..\artifacts\Mods</GameModsPath>
+    <EnableGameDebugging>false</EnableGameDebugging>
+    <EnableHarmony>true</EnableHarmony>
+    <IgnoreModFilePatterns>(^|[/\\])config\.json$|(^|[/\\])Data[/\\](DialogueHistory|ConversationMemory)([/\\]|$)</IgnoreModFilePatterns>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Pathoschild.Stardew.ModBuildConfig" Version="4.4.0" />
+    <None Update="Data\Dialogues\*.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Update="config.example.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Update="ConfigTemplates\*.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="..\..\README.md" Link="README.md" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="..\..\LICENSE" Link="LICENSE" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="..\..\docs\*.md" Link="docs\%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
+    <EmbeddedResource Include="Data\NpcProfiles\Vanilla.json" LogicalName="StardewAI.VanillaNpcProfiles.json" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,14 @@
+{
+  "Name": "StardewValley-AI-Chat",
+  "Author": "StardewValley-AI-Chat contributors",
+  "Version": "0.1.0-beta.1",
+  "Description": "NPC conversations with suggested replies, free text, long-term preferences and configurable AI providers.",
+  "UniqueID": "StardewValleyAIChat.Core",
+  "EntryDll": "StardewValley-AI-Chat.dll",
+  "MinimumApiVersion": "4.5.2",
+  "Dependencies": [
+    { "UniqueID": "Cyrilly.InputMethodFix", "IsRequired": false },
+    { "UniqueID": "spacechase0.GenericModConfigMenu", "IsRequired": false }
+  ],
+  "UpdateKeys": []
+}

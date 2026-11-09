@@ -1,0 +1,25 @@
+{
+  "EnableRightClickMenu": true,
+  "DialogueKey": "K",
+  "DailyDialogueLimit": 5,
+  "PartnerDailyDialogueLimit": 0,
+  "LongTermMemory": {
+    "Enabled": true,
+    "MaximumPreferences": 32,
+    "LearnNew": true,
+    "AutoUpdate": true,
+    "DebugLogging": false
+  },
+  "AI": {
+    "Provider": "deepseek",
+    "Enabled": false,
+    "ApiKey": "",
+    "BaseUrl": "https://api.deepseek.com",
+    "Model": "deepseek-flash",
+    "TimeoutSeconds": 30,
+    "MaxTokens": 1024,
+    "UseJsonMode": true,
+    "DisableThinking": true,
+    "ReasoningEffort": ""
+  }
+}

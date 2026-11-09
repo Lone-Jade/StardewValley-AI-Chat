@@ -1,0 +1,11 @@
+{
+  "dialogues": [
+    { "id": "default_hello", "text": "很高兴见到你。", "weight": 3 },
+    { "id": "default_day", "text": "今天也在忙农场的事情吧，记得抽空休息。", "weight": 2 },
+    { "id": "default_take_care", "text": "愿你今天一切顺利。", "weight": 2 },
+    { "id": "default_chat", "text": "能停下来聊一会儿也挺好的。", "weight": 2 },
+    { "id": "default_rain", "text": "下雨的日子，出门记得留意脚下。", "weight": 2, "weather": "rain" },
+    { "id": "default_snow", "text": "今天下雪了，记得穿暖和些。", "weight": 2, "weather": "snow" },
+    { "id": "default_friend", "text": "见到熟悉的面孔，心情也轻松了一些。", "weight": 2, "minHearts": 4 }
+  ]
+}

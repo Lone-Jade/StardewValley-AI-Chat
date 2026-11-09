@@ -1,0 +1,25 @@
+{
+  "EnableRightClickMenu": true,
+  "DialogueKey": "K",
+  "DailyDialogueLimit": 5,
+  "PartnerDailyDialogueLimit": 0,
+  "LongTermMemory": {
+    "Enabled": true,
+    "MaximumPreferences": 32,
+    "LearnNew": true,
+    "AutoUpdate": true,
+    "DebugLogging": false
+  },
+  "AI": {
+    "Provider": "openai-compatible",
+    "Enabled": false,
+    "ApiKey": "",
+    "BaseUrl": "https://your-api-host.example/v1",
+    "Model": "your-model-id",
+    "TimeoutSeconds": 30,
+    "MaxTokens": 1024,
+    "UseJsonMode": true,
+    "DisableThinking": false,
+    "ReasoningEffort": ""
+  }
+}

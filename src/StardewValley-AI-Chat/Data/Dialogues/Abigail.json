@@ -1,0 +1,15 @@
+{
+  "dialogues": [
+    { "id": "general_01", "text": "今天想找点有意思的事情做。你在农场发现什么新鲜事了吗？", "weight": 5 },
+    { "id": "general_02", "text": "有时候我会想，山的另一边还藏着多少我们没去过的地方。", "weight": 5 },
+    { "id": "sun_01", "text": "这么好的天气，总待在屋里也太可惜了。", "weight": 8, "weather": "sun" },
+    { "id": "rain_01", "text": "我喜欢雨敲在窗户上的声音。配上一局电子游戏，简直完美。", "weight": 8, "weather": "rain" },
+    { "id": "storm_01", "text": "你听到雷声了吗？有点吓人，但也让人忍不住想往外看。", "weight": 8, "weather": "storm" },
+    { "id": "snow_01", "text": "踩在新雪上的声音真好听。我想出去走走。", "weight": 8, "weather": "snow" },
+    { "id": "wind_01", "text": "风把叶子吹得到处都是，看起来像小镇在举办自己的游行。", "weight": 8, "weather": "wind" },
+    { "id": "green_rain_01", "text": "外面的雨变绿了……这可比电子游戏里的天气还奇怪。", "weight": 8, "weather": "green_rain" },
+    { "id": "new_friend_01", "text": "农场的生活怎么样？我还挺想听你讲讲的。", "weight": 6, "maxHearts": 3 },
+    { "id": "close_friend_01", "text": "嘿，见到你真好。和你聊天总能让平常的一天变得有趣些。", "weight": 10, "minHearts": 4 },
+    { "id": "rain_friend_01", "text": "要是下雨天也能一起打游戏就好了。你会不会比塞巴斯蒂安还难对付？", "weight": 10, "weather": "rain", "minHearts": 4, "maxHearts": 10 }
+  ]
+}

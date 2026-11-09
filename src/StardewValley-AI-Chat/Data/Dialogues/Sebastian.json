@@ -1,0 +1,15 @@
+{
+  "dialogues": [
+    { "id": "general_01", "text": "刚写完一段代码。现在只想安静地待一会儿。", "weight": 5 },
+    { "id": "general_02", "text": "有时候我会骑摩托出去转转。路上只有风声，感觉挺好。", "weight": 5 },
+    { "id": "sun_01", "text": "外面阳光有点刺眼。我更喜欢傍晚的时候出门。", "weight": 8, "weather": "sun" },
+    { "id": "rain_01", "text": "下雨了。雨天的湖边很安静，正好可以散散心。", "weight": 8, "weather": "rain" },
+    { "id": "storm_01", "text": "希望雷雨别让电脑断电。我还有些工作没保存。", "weight": 8, "weather": "storm" },
+    { "id": "snow_01", "text": "雪把路上的声音都盖住了。这样的安静还不错。", "weight": 8, "weather": "snow" },
+    { "id": "wind_01", "text": "今天风挺大。骑车的时候大概得小心一点。", "weight": 8, "weather": "wind" },
+    { "id": "green_rain_01", "text": "绿色的雨……我原本以为只是屏幕的颜色出了问题。", "weight": 8, "weather": "green_rain" },
+    { "id": "new_friend_01", "text": "农场那边还习惯吗？这里和城市的节奏差得挺多。", "weight": 6, "maxHearts": 3 },
+    { "id": "close_friend_01", "text": "跟你待着倒不觉得累。不用一直找话题，也挺舒服的。", "weight": 10, "minHearts": 4 },
+    { "id": "rain_friend_01", "text": "要是哪天都不忙，一起去湖边听雨吧。带件能挡雨的外套。", "weight": 10, "weather": "rain", "minHearts": 4, "maxHearts": 10 }
+  ]
+}

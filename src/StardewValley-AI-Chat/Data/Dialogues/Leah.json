@@ -1,0 +1,15 @@
+{
+  "dialogues": [
+    { "id": "general_01", "text": "刚才在想一件新雕塑的形状。有时候木头本身就会给我灵感。", "weight": 5 },
+    { "id": "general_02", "text": "在森林里走走，总能发现些之前没注意过的颜色。", "weight": 5 },
+    { "id": "sun_01", "text": "今天的光线真漂亮。我想带上画具去外面坐一会儿。", "weight": 8, "weather": "sun" },
+    { "id": "rain_01", "text": "雨后的森林有一种特别的气味。我很喜欢。", "weight": 8, "weather": "rain" },
+    { "id": "storm_01", "text": "这种天气适合在小屋里整理草图，等雷雨过去再出门。", "weight": 8, "weather": "storm" },
+    { "id": "snow_01", "text": "冬天的树枝很有线条感，画速写的时候特别有意思。", "weight": 8, "weather": "snow" },
+    { "id": "wind_01", "text": "风把树叶吹起来的样子很美，可惜画纸也差点被吹跑了。", "weight": 8, "weather": "wind" },
+    { "id": "green_rain_01", "text": "外面的植物像突然长了一大截。这场雨真让人惊讶。", "weight": 8, "weather": "green_rain" },
+    { "id": "new_friend_01", "text": "在农场工作一定很辛苦吧？希望你也能找到欣赏风景的时间。", "weight": 6, "maxHearts": 3 },
+    { "id": "close_friend_01", "text": "很高兴你过来。我正好想找个人聊聊新的创作想法。", "weight": 10, "minHearts": 4 },
+    { "id": "rain_friend_01", "text": "等雨停了，我们可以一起去森林里找找灵感。说不定还能找到些野果。", "weight": 10, "weather": "rain", "minHearts": 4, "maxHearts": 10 }
+  ]
+}

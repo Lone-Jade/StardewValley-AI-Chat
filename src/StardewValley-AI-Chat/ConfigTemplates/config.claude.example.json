@@ -1,0 +1,25 @@
+{
+  "EnableRightClickMenu": true,
+  "DialogueKey": "K",
+  "DailyDialogueLimit": 5,
+  "PartnerDailyDialogueLimit": 0,
+  "LongTermMemory": {
+    "Enabled": true,
+    "MaximumPreferences": 32,
+    "LearnNew": true,
+    "AutoUpdate": true,
+    "DebugLogging": false
+  },
+  "AI": {
+    "Provider": "claude",
+    "Enabled": false,
+    "ApiKey": "",
+    "BaseUrl": "https://api.anthropic.com/v1",
+    "Model": "claude-sonnet-5-5",
+    "TimeoutSeconds": 30,
+    "MaxTokens": 4096,
+    "UseJsonMode": false,
+    "DisableThinking": false,
+    "ReasoningEffort": ""
+  }
+}

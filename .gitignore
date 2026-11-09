@@ -1,0 +1,17 @@
+.tools/
+artifacts/
+**/bin/
+**/obj/
+*.user
+**/config.json
+**/Data/DialogueHistory/
+**/Data/ConversationMemory/
+.env
+.env.*
+.vs/
+*.suo
+*.bundle
+*.bak
+*.backup
+*.log
+任务说明.md
